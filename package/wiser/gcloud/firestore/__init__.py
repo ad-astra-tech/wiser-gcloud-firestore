@@ -7,20 +7,26 @@ except ImportError:
 
     __path__ = pkgutil.extend_path(__path__, __name__)
 
-from wiser.gcloud.firestore.services.firestore_service import Firestore
-from wiser.gcloud.firestore.types.query import (
-    FirestoreQueryBuilder,
-    FirestoreQueryCondition,
+from wiser.gcloud.firestore.services import Firestore
+from wiser.gcloud.firestore.types import (
+    FirestoreQuery,
     FirestoreQueryDirection,
+    FirestoreQueryCondition,
+    FirestoreQueryBuilder,
+    FirestoreDocumentBuilder,
+    FirestoreDocument,
+    FirestoreCollectionBuilder,
+    FirestoreCollection,
 )
-from wiser.gcloud.firestore.types.document import FirestoreDocumentBuilder
-from wiser.gcloud.firestore.types.collection import FirestoreCollectionBuilder
 
 __all__ = [
     "Firestore",
-    "FirestoreQueryBuilder",
-    "FirestoreQueryDirection",
-    "FirestoreQueryCondition",
+    "FirestoreDocument",
     "FirestoreDocumentBuilder",
+    "FirestoreQueryBuilder",
+    "FirestoreQueryCondition",
+    "FirestoreQueryDirection",
+    "FirestoreQuery",
+    "FirestoreCollection",
     "FirestoreCollectionBuilder",
 ]
