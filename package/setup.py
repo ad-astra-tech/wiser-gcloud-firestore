@@ -33,9 +33,9 @@ setuptools.setup(
     description=description,
     long_description=None,
     long_description_content_type="text/markdown",
-    url="https://github.com/nicolamassarenti/wiser",
+    url="https://github.com/audax-tech/wiser-gcloud-firestore",
     project_urls={
-        "Bug Tracker": "https://github.com/nicolamassarenti/wiser/issues",
+        "Bug Tracker": "https://github.com/audax-tech/wiser-gcloud-firestore/issues",
     },
     classifiers=[
         "Programming Language :: Python :: 3.8",
