@@ -1,3 +1,3 @@
-from wiser.gcloud.services.firestore import Firestore
+from wiser.gcloud.firestore.services.firestore_service import Firestore
 
 __all__ = ["Firestore"]
