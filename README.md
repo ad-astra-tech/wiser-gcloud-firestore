@@ -23,10 +23,13 @@ To install Google Cloud Firestore Wiser APIs run command `pip install wiser-gclo
 _Wiser_ comes with several examples: you can find them in the [examples folder](https://github.com/nicolamassarenti/wiser/tree/main/package/examples/). A brief examples of the services currently supported is shown in the following.
 
 ```python
-from wiser.gcloud.services import Firestore
-from wiser.gcloud.types.firestore import (
+from wiser.gcloud.firestore.services import Firestore
+from wiser.gcloud.firestore.types import (
     FirestoreDocumentBuilder,
     FirestoreCollectionBuilder,
+    FirestoreQueryCondition,
+    FirestoreQueryBuilder,
+    FirestoreQueryDirection
 )
 # Add a document
 COLLECTION_NAME = "collection_name"
