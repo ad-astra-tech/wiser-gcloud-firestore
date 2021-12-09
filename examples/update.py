@@ -1,5 +1,5 @@
-from wiser.gcloud.services import Firestore
-from wiser.gcloud.types.firestore import (
+from wiser.gcloud.firestore.services import Firestore
+from wiser.gcloud.firestore.types import (
     FirestoreDocumentBuilder,
     FirestoreCollectionBuilder,
 )

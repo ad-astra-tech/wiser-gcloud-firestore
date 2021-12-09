@@ -12,7 +12,7 @@ description = "Google Cloud Firestore APIs for wiser package"
 
 # Requirements, dependencies and namespaces
 extra_requirements = dict()
-dependencies = ["wiser"]
+dependencies = ["wiser", "google-cloud-firestore"]
 # Only include packages under the 'wiser' namespace. Do not include tests,
 # benchmarks, etc.
 packages = [
