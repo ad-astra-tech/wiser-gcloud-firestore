@@ -80,6 +80,15 @@ query = (
 documents = Firestore.get(collection=collection, query=query)
 for document in documents:
     print(document)
+
+# Delete all the documents of a collection
+collection = (
+    FirestoreCollectionBuilder()
+    .set_collection_name(collection_name=COLLECTION_NAME)
+    .build()
+)
+
+Firestore.delete_collection(collection=collection)
 ```
 
 

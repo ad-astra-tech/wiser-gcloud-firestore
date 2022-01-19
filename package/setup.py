@@ -5,7 +5,7 @@ CURRENT_DIR = Path(__file__).parent
 
 # Package metadata
 name = "wiser-gcloud-firestore"
-version = "0.1.0"
+version = "0.2.0"
 author = "Nicola Massarenti"
 author_email = "nicola.massarenti@gmail.com"
 description = "Google Cloud Firestore APIs for wiser package"
