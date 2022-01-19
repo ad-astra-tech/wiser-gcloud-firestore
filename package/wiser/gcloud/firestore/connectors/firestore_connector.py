@@ -65,3 +65,17 @@ class FirestoreConnector:
             query_results.append(doc.to_dict())
 
         return query_results
+
+    @staticmethod
+    def delete_collection(
+        collection_name: str,
+    ) -> None:
+        """
+        Deletes a collection and all its content
+        :param collection_name: the firestore collection name
+        :return: None
+        """
+        docs = firestore.Client().collection(collection_name).stream()
+
+        for doc in docs:
+            doc.reference.delete()
