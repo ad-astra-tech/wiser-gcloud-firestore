@@ -73,3 +73,17 @@ class Firestore:
             collection_name=collection.collection_name,
             where_conditions=query.conditions,
         )
+
+    @staticmethod
+    def delete_collection(collection: FirestoreCollection) -> None:
+        """
+        Deletes a document of a collection
+        :param collection: the firestore collection
+        :return: None
+        """
+        if not isinstance(collection, FirestoreCollection):
+            raise ValueError(
+                "Passed parameter 'collection' is not a 'FirestoreCollection'"
+            )
+
+        FirestoreConnector.delete_collection(collection_name=collection.collection_name)

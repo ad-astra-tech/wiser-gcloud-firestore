@@ -1,3 +1,6 @@
+<p align="center">
+    <img src="https://raw.githubusercontent.com/nicolamassarenti/wiser/dev/resources/logo.png" />
+</p>
 <h2 align="center">wiser-gcloud-firestore</h2>
 
 _Wiser_ is a python package designed to free the developers from the burden of common operations with cloud technologies.
@@ -77,6 +80,15 @@ query = (
 documents = Firestore.get(collection=collection, query=query)
 for document in documents:
     print(document)
+
+# Delete all the documents of a collection
+collection = (
+    FirestoreCollectionBuilder()
+    .set_collection_name(collection_name=COLLECTION_NAME)
+    .build()
+)
+
+Firestore.delete_collection(collection=collection)
 ```
 
 
